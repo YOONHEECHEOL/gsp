@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <div id="root"></div>
+    <button onclick="print()">회원 조회</button>
+    <button onclick="init()">초기화</button>
+</body>
+<script>
+const test = fetch('http://ujoon.site/')
+                .then(res => res.json())
+                .then(res => console.log(res))
+</script>
+</html>
